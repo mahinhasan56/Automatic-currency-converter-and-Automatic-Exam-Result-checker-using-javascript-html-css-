@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Fortune Genarator</title>
+<link rel="stylesheet"href="style.css">
+<script language="JavaScript">
+var length= 10
+var fortunes = new Array(length)
+fortunes[0]="True	wisdom comes not from knowledge,but from understanding.";
+fortunes[1]="Holding Hands: We definitely like each other.";
+fortunes[2]="If you were thinking about someone while reading this, you're definitely in Love.";
+fortunes[3]="Laughing while Kissing: I am completely comfortable with you.";
+fortunes[4]="Add this to ur favorites after reading!!";
+fortunes[5]="Life is not a problem to be solved, but a reality to be experienced.";
+fortunes[6]="Flatter yourself critically.";
+fortunes[7]="We must not allow other people's limited perceptions .";
+fortunes[8]="Don't look for society to give you permission to be yourself.";
+fortunes[8]="Everybody is ignorant, only on different subjects.";
+fortunes[9]="If things go wrong, don't go with them.";
+function RandomInt(low, high) 
+{ 
+  return Math.floor(Math.random()*(high-low+1)) + low; 
+}  
+function method() {
+var num = RandomInt(0,length-1);
+document.write(fortunes[num]); 
+}
+</script>
+
+</head>
+
+<body>
+
+<div align="center">
+<table width="50%" border="2px solid blue">
+    <tr>
+      <td align="center"><small><i>
+        <script type="text/javascript">
+            method();
+        </script>
+      </i></small></td>
+    </tr>
+</table>
+
+</div>
+
+<body>
+</html>

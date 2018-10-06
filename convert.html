@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>My Second Task</title>
+<link rel="stylesheet"href="style1.css">
+</head>
+
+<body>
+<script language="JavaScript">
+
+function Euro(){
+document.BoxForm.dollar.value = document.BoxForm.euro.value * 1.51
+document.BoxForm.pound.value = document.BoxForm.euro.value * 0.727
+document.BoxForm.yen.value = document.BoxForm.euro.value * 166.19
+document.BoxForm.aud.value = document.BoxForm.euro.value * 1.554
+}
+function Usd(){
+document.BoxForm.euro.value = document.BoxForm.dollar.value * 0.680
+document.BoxForm.pound.value = document.BoxForm.dollar.value * 0.488
+document.BoxForm.yen.value = document.BoxForm.dollar.value * 112.36
+document.BoxForm.aud.value = document.BoxForm.dollar.value * 1.378
+}
+function GBP(){
+document.BoxForm.dollar.value = document.BoxForm.pound.value * 2.049
+document.BoxForm.euro.value = document.BoxForm.pound.value * 1.394
+document.BoxForm.yen.value = document.BoxForm.pound.value * 231.76
+document.BoxForm.aud.value = document.BoxForm.pound.value * 2.095
+}
+function JapaniYen(){
+document.BoxForm.dollar.value = document.BoxForm.yen.value * 0.0089
+document.BoxForm.pound.value = document.BoxForm.yen.value * 0.00453
+document.BoxForm.euro.value = document.BoxForm.yen.value * 0.00605
+document.BoxForm.aud.value = document.BoxForm.yen.value * 0.0114
+}
+
+function AustrallianDollar(){
+document.BoxForm.dollar.value = document.BoxForm.aud.value * 0.73055
+document.BoxForm.pound.value = document.BoxForm.aud.value * 0.47714
+document.BoxForm.euro.value = document.BoxForm.aud.value * 0.64308
+document.BoxForm.yen.value = document.BoxForm.aud.value * 87.585
+
+}
+
+
+</script>
+
+<form name="BoxForm">
+
+<table border="2px solid red">
+<tr>
+<td>Euro: </td><td><input type="text" name="euro" onChange="Euro()" /></td>
+</tr>
+
+<tr>
+<td colspan="2"align="center">equals</td>
+</tr>
+
+<tr>
+<td>US Dollar: </td><td><input type="text" name="dollar" onChange="Usd()" /></td>
+</tr>
+
+<tr>
+<td colspan="2"align="center">equals</td>
+</tr>
+
+<tr>
+<td>British Pound:</td><td><input type="text" name="pound" onChange="GBP()" /></td>
+</tr>
+
+
+
+<tr>
+<td colspan="2"align="center">equals</td>
+</tr>
+
+<tr>
+<td>Australlian Dollar:</td><td><input type="text" name="aud" onChange="AustrallianDollar()" /></td>
+</tr>
+
+<tr>
+<td colspan="2"align="center">equals</td>
+</tr>
+
+<tr>
+<td>Yen:</td><td><input type="text" name="yen" onChange="JapaniYen()" /></td>
+</tr>
+
+<tr>
+<td colspan="2" align="right"><input type="button" value="Submit!" /></td>
+</tr>
+
+
+</table>
+
+</form>
+</body>
+</html>
